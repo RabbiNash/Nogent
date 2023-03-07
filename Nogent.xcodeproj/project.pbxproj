@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86F95F97298EC80100104F41 /* NogentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95F96298EC80100104F41 /* NogentApp.swift */; };
+		86F95F99298EC80100104F41 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95F98298EC80100104F41 /* ContainerView.swift */; };
+		86F95F9B298EC80200104F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F95F9A298EC80200104F41 /* Assets.xcassets */; };
+		86F95F9E298EC80200104F41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F95F9D298EC80200104F41 /* Preview Assets.xcassets */; };
+		86F95FA0298EC80200104F41 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95F9F298EC80200104F41 /* Persistence.swift */; };
+		86F95FA3298EC80200104F41 /* Nogent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FA1298EC80200104F41 /* Nogent.xcdatamodeld */; };
+		86F95FAD298EDCCC00104F41 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FAC298EDCCC00104F41 /* DashboardView.swift */; };
+		86F95FAF298EDCD700104F41 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FAE298EDCD700104F41 /* InsightsView.swift */; };
+		86F95FB3298EE15A00104F41 /* FeelingTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FB2298EE15A00104F41 /* FeelingTabItemView.swift */; };
+		86F95FB6298EE53C00104F41 /* FeelingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FB5298EE53B00104F41 /* FeelingModel.swift */; };
+		86F95FB9298EE79C00104F41 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FB8298EE79C00104F41 /* DateUtils.swift */; };
+		86F95FBB298EE9C300104F41 /* FeelingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FBA298EE9C300104F41 /* FeelingEnum.swift */; };
+		86F95FC0298F159300104F41 /* AggregatedFeelingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FBF298F159300104F41 /* AggregatedFeelingModel.swift */; };
+		86F95FC32991552300104F41 /* LogFeelingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FC22991552300104F41 /* LogFeelingView.swift */; };
+		86F95FC52991566200104F41 /* LogFeelingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FC42991566200104F41 /* LogFeelingItemView.swift */; };
+		86F95FC829915DE200104F41 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FC729915DE200104F41 /* TextEditorView.swift */; };
+		86F95FCC2991625000104F41 /* SelectableFeelingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FCB2991625000104F41 /* SelectableFeelingItemModel.swift */; };
+		86F95FD92991865800104F41 /* LogFeelingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FD82991865800104F41 /* LogFeelingViewModel.swift */; };
+		86F95FDE2991892C00104F41 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FDD2991892C00104F41 /* DashboardViewModel.swift */; };
+		86F95FE1299A86EE00104F41 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FE0299A86EE00104F41 /* NotificationManager.swift */; };
+		86F95FE3299A964400104F41 /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FE2299A964400104F41 /* AdaptsToKeyboard.swift */; };
+		86F95FE829B1E89A00104F41 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F95FE729B1E89A00104F41 /* AppState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86F95F93298EC80100104F41 /* Nogent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nogent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F95F96298EC80100104F41 /* NogentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogentApp.swift; sourceTree = "<group>"; };
+		86F95F98298EC80100104F41 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		86F95F9A298EC80200104F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86F95F9D298EC80200104F41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86F95F9F298EC80200104F41 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		86F95FA2298EC80200104F41 /* Nogent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nogent.xcdatamodel; sourceTree = "<group>"; };
+		86F95FAC298EDCCC00104F41 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		86F95FAE298EDCD700104F41 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		86F95FB2298EE15A00104F41 /* FeelingTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingTabItemView.swift; sourceTree = "<group>"; };
+		86F95FB5298EE53B00104F41 /* FeelingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingModel.swift; sourceTree = "<group>"; };
+		86F95FB8298EE79C00104F41 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		86F95FBA298EE9C300104F41 /* FeelingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingEnum.swift; sourceTree = "<group>"; };
+		86F95FBF298F159300104F41 /* AggregatedFeelingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedFeelingModel.swift; sourceTree = "<group>"; };
+		86F95FC22991552300104F41 /* LogFeelingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFeelingView.swift; sourceTree = "<group>"; };
+		86F95FC42991566200104F41 /* LogFeelingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFeelingItemView.swift; sourceTree = "<group>"; };
+		86F95FC729915DE200104F41 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		86F95FCB2991625000104F41 /* SelectableFeelingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableFeelingItemModel.swift; sourceTree = "<group>"; };
+		86F95FD82991865800104F41 /* LogFeelingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFeelingViewModel.swift; sourceTree = "<group>"; };
+		86F95FDD2991892C00104F41 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		86F95FE0299A86EE00104F41 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		86F95FE2299A964400104F41 /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
+		86F95FE729B1E89A00104F41 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86F95F90298EC80100104F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86F95F8A298EC80100104F41 = {
+			isa = PBXGroup;
+			children = (
+				86F95F95298EC80100104F41 /* Nogent */,
+				86F95F94298EC80100104F41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86F95F94298EC80100104F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86F95F93298EC80100104F41 /* Nogent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86F95F95298EC80100104F41 /* Nogent */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FDF299A86DD00104F41 /* notifications */,
+				86F95FDB299188FD00104F41 /* features */,
+				86F95FBE298F157300104F41 /* data */,
+				86F95FB7298EE78C00104F41 /* utils */,
+				86F95FB0298EE0BF00104F41 /* shared */,
+				86F95FAB298EDC4500104F41 /* app */,
+				86F95F9A298EC80200104F41 /* Assets.xcassets */,
+				86F95F9F298EC80200104F41 /* Persistence.swift */,
+				86F95FA1298EC80200104F41 /* Nogent.xcdatamodeld */,
+				86F95F9C298EC80200104F41 /* Preview Content */,
+			);
+			path = Nogent;
+			sourceTree = "<group>";
+		};
+		86F95F9C298EC80200104F41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86F95F9D298EC80200104F41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86F95FA9298EDBFC00104F41 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FDC2991891500104F41 /* viewmodel */,
+				86F95FB4298EE52B00104F41 /* models */,
+				86F95FB1298EE13800104F41 /* views */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		86F95FAA298EDC1B00104F41 /* insights */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FAE298EDCD700104F41 /* InsightsView.swift */,
+			);
+			path = insights;
+			sourceTree = "<group>";
+		};
+		86F95FAB298EDC4500104F41 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				86F95F98298EC80100104F41 /* ContainerView.swift */,
+				86F95F96298EC80100104F41 /* NogentApp.swift */,
+				86F95FE729B1E89A00104F41 /* AppState.swift */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		86F95FB0298EE0BF00104F41 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FBA298EE9C300104F41 /* FeelingEnum.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		86F95FB1298EE13800104F41 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FAC298EDCCC00104F41 /* DashboardView.swift */,
+				86F95FB2298EE15A00104F41 /* FeelingTabItemView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		86F95FB4298EE52B00104F41 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		86F95FB7298EE78C00104F41 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FC629915DCA00104F41 /* views */,
+				86F95FB8298EE79C00104F41 /* DateUtils.swift */,
+				86F95FC729915DE200104F41 /* TextEditorView.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		86F95FBE298F157300104F41 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FB5298EE53B00104F41 /* FeelingModel.swift */,
+				86F95FBF298F159300104F41 /* AggregatedFeelingModel.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		86F95FC12991551700104F41 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FD32991851A00104F41 /* viewmodel */,
+				86F95FCA2991623900104F41 /* model */,
+				86F95FC92991622D00104F41 /* view */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		86F95FC629915DCA00104F41 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FE2299A964400104F41 /* AdaptsToKeyboard.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		86F95FC92991622D00104F41 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FC22991552300104F41 /* LogFeelingView.swift */,
+				86F95FC42991566200104F41 /* LogFeelingItemView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		86F95FCA2991623900104F41 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FCB2991625000104F41 /* SelectableFeelingItemModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		86F95FD32991851A00104F41 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FD82991865800104F41 /* LogFeelingViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		86F95FDB299188FD00104F41 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FA9298EDBFC00104F41 /* dashboard */,
+				86F95FAA298EDC1B00104F41 /* insights */,
+				86F95FC12991551700104F41 /* log */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		86F95FDC2991891500104F41 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FDD2991892C00104F41 /* DashboardViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		86F95FDF299A86DD00104F41 /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				86F95FE0299A86EE00104F41 /* NotificationManager.swift */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86F95F92298EC80100104F41 /* Nogent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F95FA6298EC80200104F41 /* Build configuration list for PBXNativeTarget "Nogent" */;
+			buildPhases = (
+				86F95F8F298EC80100104F41 /* Sources */,
+				86F95F90298EC80100104F41 /* Frameworks */,
+				86F95F91298EC80100104F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nogent;
+			productName = Nogent;
+			productReference = 86F95F93298EC80100104F41 /* Nogent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86F95F8B298EC80100104F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					86F95F92298EC80100104F41 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 86F95F8E298EC80100104F41 /* Build configuration list for PBXProject "Nogent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86F95F8A298EC80100104F41;
+			productRefGroup = 86F95F94298EC80100104F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86F95F92298EC80100104F41 /* Nogent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86F95F91298EC80100104F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F95F9E298EC80200104F41 /* Preview Assets.xcassets in Resources */,
+				86F95F9B298EC80200104F41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86F95F8F298EC80100104F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F95FB6298EE53C00104F41 /* FeelingModel.swift in Sources */,
+				86F95FC0298F159300104F41 /* AggregatedFeelingModel.swift in Sources */,
+				86F95FA0298EC80200104F41 /* Persistence.swift in Sources */,
+				86F95FC52991566200104F41 /* LogFeelingItemView.swift in Sources */,
+				86F95F99298EC80100104F41 /* ContainerView.swift in Sources */,
+				86F95FA3298EC80200104F41 /* Nogent.xcdatamodeld in Sources */,
+				86F95FC829915DE200104F41 /* TextEditorView.swift in Sources */,
+				86F95FCC2991625000104F41 /* SelectableFeelingItemModel.swift in Sources */,
+				86F95FDE2991892C00104F41 /* DashboardViewModel.swift in Sources */,
+				86F95FB9298EE79C00104F41 /* DateUtils.swift in Sources */,
+				86F95FC32991552300104F41 /* LogFeelingView.swift in Sources */,
+				86F95FE829B1E89A00104F41 /* AppState.swift in Sources */,
+				86F95FAF298EDCD700104F41 /* InsightsView.swift in Sources */,
+				86F95FE3299A964400104F41 /* AdaptsToKeyboard.swift in Sources */,
+				86F95FE1299A86EE00104F41 /* NotificationManager.swift in Sources */,
+				86F95FBB298EE9C300104F41 /* FeelingEnum.swift in Sources */,
+				86F95FD92991865800104F41 /* LogFeelingViewModel.swift in Sources */,
+				86F95FB3298EE15A00104F41 /* FeelingTabItemView.swift in Sources */,
+				86F95FAD298EDCCC00104F41 /* DashboardView.swift in Sources */,
+				86F95F97298EC80100104F41 /* NogentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86F95FA4298EC80200104F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86F95FA5298EC80200104F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86F95FA7298EC80200104F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nogent/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HY2T876CG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nashe.Nogent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86F95FA8298EC80200104F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nogent/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HY2T876CG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nashe.Nogent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86F95F8E298EC80100104F41 /* Build configuration list for PBXProject "Nogent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F95FA4298EC80200104F41 /* Debug */,
+				86F95FA5298EC80200104F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F95FA6298EC80200104F41 /* Build configuration list for PBXNativeTarget "Nogent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F95FA7298EC80200104F41 /* Debug */,
+				86F95FA8298EC80200104F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86F95FA1298EC80200104F41 /* Nogent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86F95FA2298EC80200104F41 /* Nogent.xcdatamodel */,
+			);
+			currentVersion = 86F95FA2298EC80200104F41 /* Nogent.xcdatamodel */;
+			path = Nogent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86F95F8B298EC80100104F41 /* Project object */;
+}
